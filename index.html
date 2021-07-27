@@ -10,216 +10,216 @@
     <body>
 
         <!-- Opcoes(cabeçalho) -->
+<!-- Navbar -->
         <div class="w3-top">
-            <div class="w3-row w3-large w3-cyan">
-                <div class="w3-col s3">
-                    <a href="#" class="w3-button w3-block">Início</a>
-                </div>
-                <div class="w3-col s3">
-                    <a href="#plans" class="w3-button w3-block">Catálogo</a>
-                </div>
-                <div class="w3-col s3">
-                    <a href="#about" class="w3-button w3-block">Sobre</a>
-                </div>
-                <div class="w3-col s3">
-                    <a href="#contact" class="w3-button w3-block">Contato</a>
-                </div>
+            <div class="w3-bar w3-cyan w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large">Início</a>
+                <a href="#catalogo" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Catálogo</a>
+                <a href="#aluguel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Como Funciona o Aluguel</a>
+                <a href="#sobre-mim" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Quem Sou</a>
+                <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contato</a>
             </div>
         </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-cyan w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="#catalogo" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Catálogo</a>
+            <a href="#aluguel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Como Funciona o Aluguel</a>
+            <a href="#sobre-mim" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Quem Sou</a>
+            <a href="#contato" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contato</a>
+        </div>
 
-        <!-- Titulo -->
+        <!-- Conten principal -->
         <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
-            <div class="w3-panel">
-                <h1><b>Mesa Posta</b></h1>
-                <p>Pode colocar texto aqui</p>
+            <div class="w3-row">
+                <div class="w3-col m4 l4"><img src="./assets/logo.png" style="width:100%"></div>
+                <div class="w3-col m8 l8"><h1><b>RCP Mesa Posta Locação</b></h1><p>Pode colocar texto aqui</p></div>   
             </div>
 
-        <!-- Slideshow -->
-        <div class="w3-container">
-            <div class="w3-display-container mySlides">
-                <img src="./assets/sample1.jpg" style="width:100%">
-                <div class="w3-display-topleft w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Texto 1</span>
+            <!-- Slideshow -->
+            <div class="w3-container">
+                <div class="w3-display-container mySlides">
+                    <img src="./assets/sample1.jpg" style="width:100%">
+                    <div class="w3-display-topleft w3-container w3-padding-32">
+                        <span class="w3-white w3-padding-large w3-animate-bottom">Texto 1</span>
+                    </div>
                 </div>
-            </div>
-            <div class="w3-display-container mySlides">
-                <img src="./assets/sample2.jpg" style="width:100%">
-                <div class="w3-display-middle w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Texto 2</span>
+                <div class="w3-display-container mySlides">
+                    <img src="./assets/sample2.jpg" style="width:100%">
+                    <div class="w3-display-middle w3-container w3-padding-32">
+                        <span class="w3-white w3-padding-large w3-animate-bottom">Texto 2</span>
+                    </div>
                 </div>
-            </div>
-            <div class="w3-display-container mySlides">
-                <img src="./assets/sample3.jpg" style="width:100%">
-                <div class="w3-display-topright w3-container w3-padding-32">
-                    <span class="w3-white w3-padding-large w3-animate-bottom">Texto 3</span>
+                <div class="w3-display-container mySlides">
+                    <img src="./assets/sample3.jpg" style="width:100%">
+                    <div class="w3-display-topright w3-container w3-padding-32">
+                        <span class="w3-white w3-padding-large w3-animate-bottom">Texto 3</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- butões do slideshow -->
-            <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
-                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-                <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+                <!-- butões do slideshow -->
+                <div class="w3-container w3-cyan w3-padding w3-xlarge">
+                    <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+                    <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+                
+                    <div class="w3-center">
+                        <span class="w3-tag demodots w3-border w3-transparent w3-hover-light-blue" onclick="currentDiv(1)"></span>
+                        <span class="w3-tag demodots w3-border w3-transparent w3-hover-light-blue" onclick="currentDiv(2)"></span>
+                        <span class="w3-tag demodots w3-border w3-transparent w3-hover-light-blue" onclick="currentDiv(3)"></span>
+                    </div>
+                </div>
+            </div>
             
-                <div class="w3-center">
-                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <!-- Catalogo -->
+            <div class="w3-row w3-container" id="catalogo">
+                <div class="w3-center w3-padding-64">
+                    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">O que oferecemos(substituir por catalogo)</span>
+                </div>
+                <div class="w3-col l3 m6 w3-pale-yellow w3-container w3-padding-16">
+                    <h3>Opção 1</h3>
+                    <p>Descrição 1</p>
+                </div>
+
+                <div class="w3-col l3 m6 w3-sand w3-container w3-padding-16">
+                    <h3>Opção 2</h3>
+                    <p>Descrição 2</p>
+                </div>
+
+                <div class="w3-col l3 m6 w3-pale-red w3-container w3-padding-16">
+                    <h3>Opção 3</h3>
+                    <p>Descrição 3</p>
+                </div>
+
+                <div class="w3-col l3 m6 w3-pink w3-container w3-padding-16">
+                <h3>Opção 4</h3>
+                <p>Descrição 4</p>
                 </div>
             </div>
-        </div>
-        
-        <!-- Catalogo -->
-        <div class="w3-row w3-container">
-            <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">O que oferecemos(substituir por catalogo)</span>
-            </div>
-            <div class="w3-col l3 m6 w3-pale-yellow w3-container w3-padding-16">
-                <h3>Opção 1</h3>
-                <p>Descrição 1</p>
-            </div>
 
-            <div class="w3-col l3 m6 w3-sand w3-container w3-padding-16">
-                <h3>Opção 2</h3>
-                <p>Descrição 2</p>
-            </div>
+            <!-- Kits -->
+            <div class="w3-row-padding">
+                <div class="w3-center w3-padding-64">
+                    <h3>Preços</h3>
+                    <p>Descrição(possibilidade de algum combo)</p>
+                </div>
 
-            <div class="w3-col l3 m6 w3-pale-red w3-container w3-padding-16">
-                <h3>Opção 3</h3>
-                <p>Descrição 3</p>
-            </div>
-
-            <div class="w3-col l3 m6 w3-pink w3-container w3-padding-16">
-            <h3>Opção 4</h3>
-            <p>Descrição 4</p>
-            </div>
-        </div>
-
-        <!-- Combos -->
-        <div class="w3-row-padding" id="plans">
-            <div class="w3-center w3-padding-64">
-                <h3>Preços</h3>
-                <p>Descrição(possibilidade de algum combo)</p>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-cyan w3-xlarge w3-padding-32">Opção 1</li>
-                    <li class="w3-padding-16"><b>Quantidade</b> Item 1</li>
-                    <li class="w3-padding-16"><b>Quantidade</b> Item 2</li>
-                    <li class="w3-padding-16"><b>Quantidade</b> Item 3</li>
-                    <li class="w3-padding-16"><b>Quantidade</b> Item 4</li>
-                    <li class="w3-padding-16">
-                    <h2 class="w3-wide">R$ 00,00</h2>
-                    <span class="w3-opacity">Por hora</span>
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                        <li class="w3-cyan w3-xlarge w3-padding-32">Opção 1</li>
+                        <li class="w3-padding-16"><b>Quantidade</b> Item 1</li>
+                        <li class="w3-padding-16"><b>Quantidade</b> Item 2</li>
+                        <li class="w3-padding-16"><b>Quantidade</b> Item 3</li>
+                        <li class="w3-padding-16"><b>Quantidade</b> Item 4</li>
+                        <li class="w3-padding-16">
+                        <h2 class="w3-wide">R$ 00,00</h2>
+                        <span class="w3-opacity">Por dia</span>
+                        </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-green w3-padding-large">Alugar</button>
                     </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-green w3-padding-large">Comprar</button>
-                </li>
-                </ul>
-            </div>
+                    </ul>
+                </div>
 
-            <div class="w3-third w3-margin-bottom">
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                        <li class="w3-light-blue w3-xlarge w3-padding-32">Opcao 2</li>
+                        <li class="w3-padding-16"><b>Quantidade 1</b> Item 1</li>
+                        <li class="w3-padding-16"><b>Quantidade 2</b> Item 2</li>
+                        <li class="w3-padding-16"><b>Quantidade 3</b> Item 3</li>
+                        <li class="w3-padding-16"><b>Quantidade 4</b> Item 4</li>
+                        <li class="w3-padding-16">
+                        <h2 class="w3-wide">R$ 00,00</h2>
+                        <span class="w3-opacity">Por dia</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-green w3-padding-large">Alugar</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
                 <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-light-blue w3-xlarge w3-padding-32">Opcao 2</li>
+                    <li class="w3-cyan w3-xlarge w3-padding-32">Opcao 3</li>
                     <li class="w3-padding-16"><b>Quantidade 1</b> Item 1</li>
                     <li class="w3-padding-16"><b>Quantidade 2</b> Item 2</li>
                     <li class="w3-padding-16"><b>Quantidade 3</b> Item 3</li>
                     <li class="w3-padding-16"><b>Quantidade 4</b> Item 4</li>
                     <li class="w3-padding-16">
                     <h2 class="w3-wide">R$ 00,00</h2>
-                    <span class="w3-opacity">Por hora</span>
+                    <span class="w3-opacity">Por dia</span>
                     </li>
                     <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-green w3-padding-large">Comprar</button>
+                    <button class="w3-button w3-green w3-padding-large">Alugar</button>
                     </li>
                 </ul>
+                </div>
             </div>
 
-            <div class="w3-third w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                <li class="w3-cyan w3-xlarge w3-padding-32">Opcao 3</li>
-                <li class="w3-padding-16"><b>Quantidade 1</b> Item 1</li>
-                <li class="w3-padding-16"><b>Quantidade 2</b> Item 2</li>
-                <li class="w3-padding-16"><b>Quantidade 3</b> Item 3</li>
-                <li class="w3-padding-16"><b>Quantidade 4</b> Item 4</li>
-                <li class="w3-padding-16">
-                <h2 class="w3-wide">R$ 00,00</h2>
-                <span class="w3-opacity">Por hora</span>
-                </li>
-                <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-green w3-padding-large">Comprar</button>
-                </li>
-            </ul>
-            </div>
-        </div>
-
-        <!-- Sobre nos -->
-        <div class="w3-row-padding" id="about">
-            <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Quem eu sou</span>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
+            <!-- FAQ-->
+            <div class="w3-row-padding" id="aluguel">
+                <div class="w3-center w3-padding-64">
+                    <span class="w3-xlarge w3-bottombar w3-border-light-blue w3-padding-16">Como Funciona o Aluguel de Mesa Posta?</span>
+                </div>
                 <div class="w3-card-4">
-                    <img src="./assets/sample4.jpeg" alt="John" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Pessoa 1</h3>
-                    <p class="w3-opacity">Idealiadora</p>
-                    <p>Descrição 1</p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contate-me</button></p>
+                    <h5>Como faço para alugar peças na RCP mesa posta locações?</h5>
+                    <p> Através do site pelo endereço: <a title="W3.CSS" target="_blank" class="w3-hover-text-cyan" href="https://rcpmesapostalocacoes.netlify.app/">https://rcpmesapostalocacoes.netlify.app/</a>.
+                         Escolhe a(s) peça(s), ou o kit, a quantidade de peças para o seu evento, me envia, por E-mail, <a title="W3.CSS" target="_blank" class="w3-hover-text-green" href="https://api.whatsapp.com/send?phone=5581995587710">Whatsapp</a> 
+                        ou <a title="W3.CSS" target="_blank" class="w3-hover-text-pink" href="https://www.instagram.com/rcpmesaposta/">Instagram</a> a solicitação do pedido com os itens ou kit escolhidos e a quantidade. 
+                        Também pode ser realizado pelo telefone através do número <a title="W3.CSS" target="_blank" class="w3-hover-text-blue" href="tel:81995587710">81995587710</a>.</p>
+                    <h5>Como funciona a retirada e entrega das peças?</h5>
+                    <p>A(s) peça(s) pode(m) ser entregue(s) e retirada(s) no local solicitado pelo cliente (inclui uma taxa de entrega) ou 
+                        o cliente  poderá vir até a RCP mesa posta locações (<a title="W3.CSS" target="_blank" class="w3-hover-text-orange" 
+                        href="https://www.google.com.br/maps/place/R.+Cel.+Urbano+Ribeiro+de+Sena,+242+-+%C3%81gua+Fria,+Recife+-+PE,+52221-005/@-8.0166663,-34.8907887,17z/data=!3m1!4b1!4m5!3m4!1s0x7ab183ee0a2203f:0x8d11f39ecffb7645!8m2!3d-8.0166663!4d-34.8886">Rua Coronel Urbano Ribeiro de Sena, 242, Fundão</a>) retirar e devolver a(s) peça(s) locada(s).
+                    </p>
+                    <h5>Devo entregar o material limpo?</h5>
+                    <p>Não precisa ser lavado, no entanto, não pode ter resíduos de comidas ou bebidas.
+                    </p>
+                </div>
+ 
+            <!-- Sobre mim -->
+            <div class="w3-row-padding" id="sobre-mim">
+                <div class="w3-center w3-padding-64">
+                    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Quem eu sou</span>
+                </div>
+
+                <div class="w3-one w3-margin-bottom">
+                    <div class="w3-card-4">
+                        <img src="./assets/sample4.jpeg" alt="John" style="width:100%">
+                        <div class="w3-container">
+                        <h3>Rosângela Cardoso da Paz</h3>
+                        <p class="w3-opacity">Idealizadora</p>
+                        <p>Descrição 1</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contate-me</button></p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
-                    <img src="./assets/sample4.jpeg" alt="Mike" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Pessoa 2</h3>
-                    <p class="w3-opacity">Cargo</p>
-                    <p>Descrição 2</p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                    </div>
+            <!-- Contato -->
+            <div class="w3-center w3-padding-64" id="contato">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contate-nos (substituir por whatsapp)</span>
+            </div>
+
+            <form class="w3-container" action="/action_page.php" target="_blank" method="POST">
+                <div class="w3-section">
+                    <label>Nome*:</label>
+                    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
                 </div>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
-                    <img src="./assets/sample4.jpeg" alt="Jane" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Pessoa 3</h3>
-                    <p class="w3-opacity">Cargo</p>
-                    <p>Descrição 3</p>
-                    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-                    </div>
+                <div class="w3-section">
+                    <label>E-mail*:</label>
+                    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="email" name="Email" required>
                 </div>
-            </div>
-        </div>
-
-        <!-- Contato -->
-        <div class="w3-center w3-padding-64" id="contact">
-            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contate-nos (substituir por whatsapp)</span>
-        </div>
-
-        <form class="w3-container" action="/action_page.php" target="_blank">
-            <div class="w3-section">
-                <label>Nome</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
-            </div>
-            <div class="w3-section">
-                <label>E-mail</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
-            </div>
-            <div class="w3-section">
-                <label>Assunto</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
-            </div>
-            <div class="w3-section">
-                <label>Menssagem</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
-            </div>
-            <button type="submit" class="w3-button w3-block w3-cyan w3-hover-indigo">Enviar</button>
-        </form>
+                <div class="w3-section">
+                    <label>Assunto*:</label>
+                    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+                </div>
+                <div class="w3-section">
+                    <label>Menssagem*:</label>
+                    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+                </div>
+                <button type="submit" class="w3-button w3-block w3-cyan w3-hover-indigo">Enviar</button>
+            </form>
 
         </div>
 
@@ -230,7 +230,9 @@
         <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Para o Inicio</a>
         <div class="w3-xlarge w3-section">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <a href="https://www.instagram.com/rcpmesaposta/" target="_blank">
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+            </a>
             <i class="fa fa-snapchat w3-hover-opacity"></i>
             <i class="fa fa-pinterest-p w3-hover-opacity"></i>
             <i class="fa fa-twitter w3-hover-opacity"></i>

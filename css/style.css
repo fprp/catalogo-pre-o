@@ -1,5 +1,9 @@
-html,body,h1,h2,h3,h4 {
+html,body,h1,h2,h3,h4,h5 {
     font-family:"Lato", sans-serif
+}
+
+h5 {
+    font-weight: bold;
 }
 
 .mySlides {
@@ -15,4 +19,8 @@ html,body,h1,h2,h3,h4 {
     width:15px;
     padding:0;
     margin-top:6px
+}
+
+a {
+    text-decoration:none;
 }
