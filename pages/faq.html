@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <title>Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <body>
+
+        <!-- Menu navegação -->
+        <div class="w3-top">
+            <div class="w3-bar w3-cyan w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Início</a>
+                <a href="../index.html#catalogo" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Catálogo</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Como Funciona o Aluguel</a>
+                <a href="./quemSou.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Quem Sou</a>
+                <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contato</a>
+            </div>
+        </div>
+  
+  <!-- Menu navegação em telas pequenas-->
+        <div id="navDemo" class="w3-bar-block w3-cyan w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="../index.html#catalogo" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Catálogo</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Como Funciona o Aluguel</a>
+            <a href="./quemSou.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Quem Sou</a>
+            <a href="#contato" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contato</a>
+        </div>
+
+        <!-- Conteudo principal -->
+        <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+            <div class="w3-row">
+                <div class="w3-col m4 l4"><img src="../assets/logo.png" style="width:100%"></div>
+                <div class="w3-col m8 l8"><h1><b>RCP Mesa Posta</b></h1><p>Pode colocar texto aqui</p></div>   
+            </div>
+
+            <!-- FAQ-->
+            <div class="w3-row-padding" id="aluguel">
+                <div class="w3-center w3-padding-64">
+                    <span class="w3-xlarge w3-bottombar w3-border-light-blue">Como Funciona a prestação de serviço da RCP Mesa Posta?</span>
+                    <p>
+                        A RCP Mesa Posta, no intuito de oferecer um serviço de qualidade e transparência, 
+                        reunimos as principais dúvidas e descrevemos em forma de perguntas e respostas.
+                    </p>
+                </div>
+                <div class="w3-card-4">
+                    <h5>Como realizar o pedido na RCP Mesa Posta Locações?</h5>
+                    <p> Através do <a title="W3.CSS" target="_blank" class="w3-hover-text-green" href="https://api.whatsapp.com/send?phone=5581995587710">Whatsapp</a>, 
+                        <a title="W3.CSS" target="_blank" class="w3-hover-text-pink" href="https://www.instagram.com/rcpmesaposta/">Instagram</a>,
+                        <a title="W3.CSS" target="_blank" class="w3-hover-text-blue" href="tel:81995587710">Telefone</a> ou
+                        <a title="W3.CSS" target="_blank" class="w3-hover-text-cyan" href="https://rcpmesapostalocacoes.netlify.app/">site</a>.
+                         Escolhe a(s) peça(s), ou o kit, a quantidade de peças para o seu evento, me envia, por E-mail,  
+                        ou  a solicitação do pedido com os itens ou kit escolhidos e a quantidade. 
+                        Também pode ser realizado pelo telefone através do número .</p>
+                    <h5>Como funciona a retirada e entrega das peças?</h5>
+                    <p>A(s) peça(s) pode(m) ser entregue(s) e retirada(s) no local solicitado pelo cliente (inclui uma taxa de entrega) ou 
+                        o cliente  poderá vir até a RCP mesa posta locações (<a title="W3.CSS" target="_blank" class="w3-hover-text-orange" 
+                        href="https://www.google.com.br/maps/place/R.+Cel.+Urbano+Ribeiro+de+Sena,+242+-+%C3%81gua+Fria,+Recife+-+PE,+52221-005/@-8.0166663,-34.8907887,17z/data=!3m1!4b1!4m5!3m4!1s0x7ab183ee0a2203f:0x8d11f39ecffb7645!8m2!3d-8.0166663!4d-34.8886">Rua Coronel Urbano Ribeiro de Sena, 242, Fundão</a>) retirar e devolver a(s) peça(s) locada(s).
+                    </p>
+                    <h5>Devo entregar o material limpo?</h5>
+                    <p>Não precisa ser lavado, no entanto, não pode ter resíduos de comidas ou bebidas.
+                    </p>
+                    <h5>A RCP Mesa Posta Locações envia o material limpo e higienizado?</h5>
+                    <p>Sim, toda(s) a(s) peça(s) alugada(s) são enviadas aos clientes limpas e higienizadas.
+                    </p>
+                    <h5>Como deve ser a devolução do(s) produto(s)?</h5>
+                    <p>Devolvido na mesma embalagem da retirada.
+                    </p>
+                    <h5>Como o(s) material (ais) deve( m) ser conferido(s) na retirada?</h5>
+                    <p>A conferência é realizada no ato do recebimento e entrega do(s) produto(s) e de forma que será feita  item por item, no que se refere a quantidade e o estado de cada peça.
+                        <br>Obs: É importante o responsável pela locação, está presente na retirada e na entrega do(s) produto (s), 
+                        em caso de ausência prevalece a nossa conferência, sem direito a reclamação posterior.
+                    </p>
+                    <h5>Se alguma peça quebrar ou ter avaria, o que fazer?</h5>
+                    <p>Todas as peças possuem um valor de reposição caso danifiquem ou quebrem, o cliente tem a alternativa de comprar a peça idêntica e repor no lugar da peça danificada.
+                       No caso de guardanapo com manchas excessivas ou de difícil remoção, serão cobrados taxa de lavanderia (por unidade).
+                    </p>
+                    <h5>Como é a forma de pagamento?</h5>
+                    <p>50% (dinheiro, transferência, cartão de débito, depósito e pix) ao fechar o contrato e o restante no ato da retirada.
+                    </p>
+                    <h5>O pedido  pelo site, whatsapp ou telefone garante que o material estará disponível no dia do meu evento?</h5>
+                    <p>O pedido realizado, seja ele pelo site whatsapp e por telefone, não garante a disponibilidade, pois se faz necessário verificar a disponibilidade de data e quantidade solicitada pelo cliente.
+                    </p>
+                    <h5>É possível fazer meu orçamento por telefone?</h5>
+                    <p>Sim, é só ligar para <a title="W3.CSS" target="_blank" class="w3-hover-text-blue" href="tel:81995587710">81 995587710</a>.
+                    </p>
+                    <h5>É possível fazer meu orçamento pelo site?</h5>
+                    <p>Sim, é só acessar o endereço.  fazer seu cadastro, escolher as peças e dizer a quantidade para o seu evento e me enviar sua solicitação. 
+                    </p>
+                    <h5>Quanto tempo antes do evento posso fazer meu orçamento?</h5>
+                    <p>O quanto antes melhor, para garantir a disponibilidade das peças.
+                    </p>
+                    <h5>Caso meu evento mude de data, e já tenha feito a reserva e pago o sinal, é possível alterar a data?</h5>
+                    <p>Sim, porém com duas ressalvas, a primeira é que a alteração de data deve ser feita com até   48h antes da data pré agendada e a segunda se a mesa posta escolhida esteja disponível para nova data.
+                    </p>
+                    <h5>Posso cancelar meu pedido?</h5>
+                    <p>Sim, porém terá que olhar a cláusula do contrato.
+                    </p>
+                    <h5>Caso cancele meu pedido, perco o valor pago pelo sinal?</h5>
+                    <p>.......... (cláusula do contrato)
+                    </p>
+                    <h5>O material alugado deve ser conferido na entrega antes e depois do evento?</h5>
+                    <p>Sim, todo  material só é entregue ou retirado, como também a devolução, mediante conferência.
+                    </p>
+                    <h5>Não consegui devolver o material na data combinada, o que fazer?</h5>
+                    <p>O material locado é disponibilizado por dia. No contrato estabelecemos o dia da entrega/retirada e a data da devolução, caso não ocorra nos dias estipulados cobramos as respectivas diárias adicionais.
+                    </p>
+                    <h5>É possível retirar o material na RCP Mesa Posta Locações?</h5>
+                    <p>Sim, o cliente tem a opção de retirar ou a RCP Mesa Posta Locações entregar no endereço solicitado pelo cliente, com custo adicional.
+                    </p>
+                    <h5>Existe quantidade mínima para locação?</h5>
+                    <p>Não, alugamos a partir de 1 (uma) unidade.
+                    </p>
+                    <h5>Existe quantidade máxima para locação?</h5>
+                    <p>Sim, 6 (seis) unidades.
+                    </p>
+                    <h5>Quais os benefícios e facilidades de se alugar mesa posta?</h5>
+                    <p>O cliente encontra vária vantagens como: Menor custo, mais barato do que comprar, poupa tempo, pois não precisa lavar as louças e nem a roupa de mesa
+                        diversidade de itens, podendo fazer várias composições e temas diferente, Não precisa se preocupem com espaço no armário para guardar variedades de louças.
+
+                    </p>
+                    <h5>A RCP Mesa Posta Locações oferece montagem da mesa posta?</h5>
+                    <p>Sim, com um custo adicional por esse serviço.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botao no fim da pagina para ir pro incio -->
+        <div class="w3-container w3-row">
+            <a href="#" class="w3-button w3-light-blue w3-hover-indigo w3-margin w3-right">
+                <i class="fa fa-arrow-up w3-margin-right"></i>Ínicio</a>
+        </div>
+            
+        <!-- rodape -->
+        <footer class="w3-container w3-row w3-cyan w3-center w3-padding-large">   
+            <div class="w3-section" id="rodape">
+                <!-- coluna 1 do rodape -->
+                <div class="w3-col s12 l4 w3-left-align">
+                    <!-- horario de atendimento no rodape -->
+                    <p class="titulo-rodape">Hórario de Atendimento:</p>
+                    <p class="texto-rodape">Seg a Sex: 9h às 18h<br>
+                    Sáb: 9h às 13h<br>
+                    Domingo: Fechado
+                    </p>
+                    <!-- contato no rodape -->
+                    <p class="titulo-rodape">Contato:</p>
+                    <a class="w3-hover-opacity texto-rodape" href="tel:81995587710">
+                        <i class="fa fa-phone-square"></i>
+                          81 995587710
+                     </a><br>
+                    <a class="w3-hover-opacity texto-rodape" href="https://www.instagram.com/rcpmesaposta/" target="_blank">
+                        <i class="fa fa-instagram "></i>
+                        @rcpmesaposta
+                    </a><br>
+                    <a class="w3-hover-opacity texto-rodape" href="https://www.instagram.com/rcpmesaposta/" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                        rcpmesapostlocacoes@gmail.com
+                    </a><br>
+                </div>
+                <!-- coluna 2 do rodape -->
+                <div class="w3-col s12 l4 w3-left-align">
+                    <!-- endereço no rodape -->
+                    <p class="titulo-rodape">Endereço:</p>
+                    <p class="texto-rodape">Rua Coronel Urbano Ribeiro de Sena, 242, Fundão</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.8279961138733!2d-34.89078868537521!3d-8.016666294227015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab183ee0a2203f%3A0x8d11f39ecffb7645!2sR.%20Cel.%20Urbano%20Ribeiro%20de%20Sena%2C%20242%20-%20%C3%81gua%20Fria%2C%20Recife%20-%20PE%2C%2052221-005!5e0!3m2!1spt-BR!2sbr!4v1627495492818!5m2!1spt-BR!2sbr" 
+                    width="257" height="200" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>                
+                </div>
+                <!-- coluna 3 do rodape -->
+                <div class="w3-col s12 l4 w3-left-align">
+                    <!-- direitos autorais do site no rodape -->
+                    <p class="texto-rodape"> &copy;2021 RCP Mesa Posta. Todos os direitos reservados. 
+                    </p>
+                    <!-- direitos autorais do desenvolvimento do site no rodape -->
+                    <p class="texto-rodape">
+                        Desenvolvido por Filipe Paz
+                        <a href="https://www.linkedin.com/in/filipe-paz/" target="_blank">
+                            <i class="fa fa-linkedin-square w3-hover-opacity"></i>
+                        </a>
+                        <a href="https://github.com/fprp" target="_blank">
+                            <i class="fa fa-github w3-hover-opacity"></i>
+                        </a>
+                        <a href="https://www.instagram.com/filipe_paz/" target="_blank">
+                            <i class="fa fa-instagram w3-hover-opacity"></i>
+                        </a>
+                    </p>
+                    <!-- direitos autorais das fotos do site no rodape -->
+                    <p class="texto-rodape">
+                        Foto Fábio Reis
+                        <a href="https://www.instagram.com/fabio.rreis/" target="_blank">
+                            <i class="fa fa-instagram w3-hover-opacity"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/script.js" type="text/javascript"></script>
+
+    </body>
+</html>
