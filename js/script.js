@@ -52,7 +52,7 @@ function myFunction() {
   }
 }
 
-// Clicar na tela para fechar
+// Clicar para fechar
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {

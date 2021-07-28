@@ -25,3 +25,12 @@ a {
     text-decoration:none;
 }
 
+.titulo-rodape {
+    color: white;
+    font-size: 14px;
+}
+
+
+.texto-rodape {
+    font-size: 13px;
+}
