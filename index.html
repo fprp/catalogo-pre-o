@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <body>
 
-        <!-- Opcoes(cabeçalho) -->
-<!-- Navbar -->
+        <!-- Menu navegação -->
         <div class="w3-top">
             <div class="w3-bar w3-cyan w3-card">
                 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -22,7 +21,7 @@
             </div>
         </div>
   
-  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <!-- Menu navegação em telas pequenas-->
         <div id="navDemo" class="w3-bar-block w3-cyan w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
             <a href="#catalogo" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Catálogo</a>
             <a href="#aluguel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Como Funciona o Aluguel</a>
@@ -30,7 +29,7 @@
             <a href="#contato" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contato</a>
         </div>
 
-        <!-- Conten principal -->
+        <!-- Conteudo principal -->
         <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
             <div class="w3-row">
                 <div class="w3-col m4 l4"><img src="./assets/logo.png" style="width:100%"></div>
@@ -161,8 +160,8 @@
                 <div class="w3-center w3-padding-64">
                     <span class="w3-xlarge w3-bottombar w3-border-light-blue">Como Funciona a prestação de serviço da RCP Mesa Posta Locações?</span>
                     <p>
-                        A RCP Mesa Posta Locações, no intuito de oferecer um serviço de qualidade e transferência, 
-                        reuniu as principais dúvidas e descrevemos em forma de pergunta e resposta.
+                        A RCP Mesa Posta Locações, no intuito de oferecer um serviço de qualidade e transparência, 
+                        reunimos as principais dúvidas e descrevemos em forma de pergunta e resposta.
                     </p>
                 </div>
                 <div class="w3-card-4">
@@ -287,21 +286,28 @@
                     <label>Menssagem*:</label>
                     <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
                 </div>
-                <button type="submit" class="w3-button w3-block w3-cyan w3-hover-indigo">Enviar</button>
+                <button type="submit" class="w3-button w3-block w3-light-blue w3-hover-indigo">Enviar</button>
             </form>
-
         </div>
 
-        <!-- Footer -->
-
+        <!-- Botao no fim da pagina para ir pro incio -->
+        <div class="w3-container w3-row">
+            <a href="#" class="w3-button w3-light-blue w3-hover-indigo w3-margin w3-right">
+                <i class="fa fa-arrow-up w3-margin-right"></i>Ínicio</a>
+        </div>
+            
+        <!-- rodape -->
         <footer class="w3-container w3-row w3-cyan w3-center w3-padding-large">   
             <div class="w3-section" id="rodape">
+                <!-- coluna 1 do rodape -->
                 <div class="w3-col s12 l4 w3-left-align">
+                    <!-- horario de atendimento no rodape -->
                     <p class="titulo-rodape">Hórario de Atendimento:</p>
                     <p class="texto-rodape">Seg a Sex: 9h às 18h<br>
                     Sáb: 9h às 13h<br>
                     Domingo: Fechado
                     </p>
+                    <!-- contato no rodape -->
                     <p class="titulo-rodape">Contato:</p>
                     <a class="w3-hover-opacity texto-rodape" href="tel:81995587710">
                         <i class="fa fa-phone-square"></i>
@@ -316,15 +322,20 @@
                         rcpmesapostlocacoes@gmail.com
                     </a><br>
                 </div>
+                <!-- coluna 2 do rodape -->
                 <div class="w3-col s12 l4 w3-left-align">
+                    <!-- endereço no rodape -->
                     <p class="titulo-rodape">Endereço:</p>
                     <p class="texto-rodape">Rua Coronel Urbano Ribeiro de Sena, 242, Fundão</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.8279961138733!2d-34.89078868537521!3d-8.016666294227015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab183ee0a2203f%3A0x8d11f39ecffb7645!2sR.%20Cel.%20Urbano%20Ribeiro%20de%20Sena%2C%20242%20-%20%C3%81gua%20Fria%2C%20Recife%20-%20PE%2C%2052221-005!5e0!3m2!1spt-BR!2sbr!4v1627495492818!5m2!1spt-BR!2sbr" 
                     width="257" height="200" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>                
                 </div>
+                <!-- coluna 3 do rodape -->
                 <div class="w3-col s12 l4 w3-left-align">
+                    <!-- direitos autorais do site no rodape -->
                     <p class="texto-rodape"> &copy;2021 RCP Mesa Posta Locações. Todos os direitos reservados. 
                     </p>
+                    <!-- direitos autorais do desenvolvimento do site no rodape -->
                     <p class="texto-rodape">
                         Desenvolvido por Filipe Paz
                         <a href="https://www.linkedin.com/in/filipe-paz/" target="_blank">
@@ -337,19 +348,14 @@
                             <i class="fa fa-instagram w3-hover-opacity"></i>
                         </a>
                     </p>
+                    <!-- direitos autorais das fotos do site no rodape -->
                     <p class="texto-rodape">
-                        Fotos capturadas e tratadas por Fábio Reis
+                        Foto Fábio Reis
                         <a href="https://www.instagram.com/fabio.rreis/" target="_blank">
                             <i class="fa fa-instagram w3-hover-opacity"></i>
                         </a>
                     </p>
                 </div>
-                <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-
-            <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-            <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-            <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
-            <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
             </div>
         </footer>
 
