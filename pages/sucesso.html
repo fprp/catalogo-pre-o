@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script>src="//cdn.jsdelivr.net/npm/sweetalert2@11"</script>
-    <script>src="sweetalert2.all.min.js"</script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
     <body>
-
         <!-- Menu navegação -->
         <div class="w3-top">
             <div class="w3-bar w3-cyan w3-card">
@@ -34,7 +33,7 @@
         <!-- Conteudo principal -->
         <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
             <div class="w3-row">
-                <div class="w3-col m4 l4"><img src="../assets/logo.png" style="width:100%"></div>
+                <div class="w3-col m4 l4"><img src="../assets/logo.jpg" style="width:100%"></div>
                 <div class="w3-col m8 l8"><h1><b>RCP Mesa Posta</b></h1><p>Pode colocar texto aqui</p></div>   
             </div>
 
@@ -64,6 +63,20 @@
             </form>
         </div>
 
+        <script>
+            Swal.fire({
+                title: 'E-mail enviado com sucesso!',
+                text: 'Você será redirecionado ',
+                showCloseButton: true,
+                showClass:{
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass:{
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+                })
+        </script>
+        
         <!-- Botao no fim da pagina para ir pro incio -->
         <div class="w3-container w3-row">
             <a href="#" class="w3-button w3-light-blue w3-hover-indigo w3-margin w3-right">
@@ -131,22 +144,6 @@
                     </p>
                 </div>
             </div>
-            <script>
-                Swal.fire({
-                    title: 'E-mail enviado com sucesso!',
-                    text: 'Você será redirecionado ',
-                    showCloseButton: true,
-                    showClass:{
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass:{
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                    })
-            </script>
         </footer>
-
-        <script src="../js/script.js" type="text/javascript"></script>
-
     </body>
 </html>
