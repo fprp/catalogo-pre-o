@@ -32,7 +32,7 @@
         <!-- Conteudo principal -->
         <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
             <div class="w3-row">
-                <div class="w3-col m4 l4"><img src="./assets/logo.png" style="width:100%"></div>
+                <div class="w3-col m4 l4"><img src="./assets/logo.jpg" style="width:100%"></div>
                 <div class="w3-col m8 l8"><h1><b>RCP Mesa Posta</b></h1><p>Pode colocar texto aqui</p></div>   
             </div>
 
@@ -105,9 +105,15 @@
 
                 <div class="w3-quarter">
                     <div class="w3-center w3-hover-shadow">
-                        <div>
-                            <img src="./assets/kits/kit1.jpg" style="width: 100%;">
+                        <!--Slideshow-->
+                        <div class="w3-content w3-display-container">
+                            <img src="./assets/kits/kit1-1.jpg" style="width: 100%;">
+                            <img src="./assets/kits/kit1-2.jpg" style="width: 100%;">
                         </div>
+                        <!-- botoes-->
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+
                         <ul class="w3-ul w3-border">
                             <li class="w3-padding-16"><b>Quantidade</b> Item 1</li>
                             <li class="w3-padding-16"><b>Quantidade</b> Item 2</li>
@@ -186,6 +192,9 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+
         <!-- Botao no fim da pagina para ir pro incio -->
         <div class="w3-container w3-row">
             <a href="#" class="w3-button w3-light-blue w3-hover-indigo w3-margin w3-right">
