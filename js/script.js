@@ -31,6 +31,16 @@ function showDivs(n, no) {
   dots[slideIndex[0]-1].className += " w3-white";
 }
 
+// Alternancia de menu
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
 // Clicar para fechar
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
