@@ -10,6 +10,19 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweetalert2.all.min.js"></script>
     <body>
+        <script>
+            Swal.fire({
+                title: 'E-mail enviado com sucesso!',
+                showCloseButton: true,
+                showClass:{
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass:{
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            })
+        </script>
+
         <!-- Menu navegação -->
         <div class="w3-top">
             <div class="w3-bar w3-cyan w3-card">
@@ -62,21 +75,6 @@
                 <button type="submit" class="w3-button w3-block w3-light-blue w3-hover-indigo">Enviar</button>
             </form>
         </div>
-
-        <script>
-            Swal.fire({
-                title: 'E-mail enviado com sucesso!',
-                text: 'Você será redirecionado ',
-                showCloseButton: true,
-                showClass:{
-                    popup: 'animate__animated animate__fadeInDown'
-                },
-                hideClass:{
-                    popup: 'animate__animated animate__fadeOutUp'
-                }
-                })
-        </script>
-        
         <!-- Botao no fim da pagina para ir pro incio -->
         <div class="w3-container w3-row">
             <a href="#" class="w3-button w3-light-blue w3-hover-indigo w3-margin w3-right">
