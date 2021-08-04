@@ -1,36 +1,28 @@
-// Slideshow
-var slideIndex = [1,1,1,1,1,1,1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7"];
-showDivs(1, 0);
-showDivs(1, 1);
-showDivs(1, 2);
-showDivs(1, 3);
-showDivs(1, 4);
-showDivs(1, 5);
-showDivs(1, 6);
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function plusDivs(n, no) {
-  showDivs(slideIndex[no] += n, no);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
 function currentDiv(n) {
-  showDivs(slideIndex[0] = n, 0);
+  showDivs(slideIndex = n);
 }
 
-function showDivs(n, no) {
+function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName(slideId[no]);
+  var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dots");
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex[no]-1].style.display = "block";
-  dots[slideIndex[0]-1].className += " w3-white";
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
 }
 
 // Alternancia de menu

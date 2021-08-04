@@ -28,6 +28,11 @@ h5 {
 a {
     text-decoration:none;
 }
+.descricao-categoria {
+
+    font-size: 14px;
+
+}
 
 .titulo-rodape {
     color: white;
