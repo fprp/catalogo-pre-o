@@ -6,6 +6,10 @@ h5 {
     font-weight: bold;
 }
 
+.logo {
+    border-radius: 5px;
+}
+
 .mySlides {
     display:none
 }
