@@ -46,3 +46,8 @@ a {
 .texto-rodape {
     font-size: 13px;
 }
+
+.sobre-texto {
+    text-align: justify;
+    text-justify: inter-word;
+}
